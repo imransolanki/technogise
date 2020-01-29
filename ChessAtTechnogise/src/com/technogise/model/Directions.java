@@ -1,0 +1,12 @@
+package com.technogise.model;
+
+public enum Directions {
+	VERTICAL,
+	HORIZONTAL,
+	VERTICAL_LEFT,
+	VERTICAL_RIGHT,
+	HORIZONTAL_LEFT,
+	HORIZONTAL_RIGHT,
+	DIAGONAL_UP,
+	DIAGONAL_DOWN;
+}
