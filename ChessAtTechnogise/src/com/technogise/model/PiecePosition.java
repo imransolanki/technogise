@@ -15,4 +15,11 @@ public class PiecePosition {
 	public int getColumn() {
 		return column;
 	}
+	
+	@Override
+	public String toString() {
+		StringBuilder stringBuilder = new StringBuilder();
+		stringBuilder.append(String.valueOf(this.row)).append(",").append(String.valueOf(this.column));
+		return stringBuilder.toString();
+	}
 }

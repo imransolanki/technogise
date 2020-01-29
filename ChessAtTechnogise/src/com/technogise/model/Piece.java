@@ -4,6 +4,13 @@ public class Piece {
 	PieceType type;
 	PiecePosition currentPosition;
 	Rule rule;
+	
+	public Piece(PieceType type, PiecePosition currentPosition) {
+		super();
+		this.type = type;
+		this.currentPosition = currentPosition;
+		calculateRule();
+	}
 
 	public PieceType getType() {
 		return type;

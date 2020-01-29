@@ -1,2 +1,3 @@
 module ChessAtTechnogise {
+	requires junit;
 }
