@@ -49,11 +49,7 @@ public class Piece {
 		Rule rule = null;
 		switch (pieceType) {
 		case KING:
-			rule = new Rule(1,
-					new Directions[] { 
-							Directions.DIAGONAL_DOWN, Directions.DIAGONAL_UP,
-							Directions.HORIZONTAL, Directions.HORIZONTAL_LEFT, Directions.HORIZONTAL_RIGHT,
-							Directions.VERTICAL, Directions.VERTICAL_LEFT,Directions.VERTICAL_RIGHT });
+			rule = new Rule(1);
 		}
 		return rule;
 	}

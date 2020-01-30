@@ -1,5 +1,7 @@
 package com.technogise.model;
 
+import java.util.Objects;
+
 public class PiecePosition {
 	int row, column;
 
@@ -15,7 +17,18 @@ public class PiecePosition {
 	public int getColumn() {
 		return column;
 	}
-	
+
+	@Override
+	public boolean equals(Object obj) {
+		if (obj == this)
+			return true;
+		if (!(obj instanceof PiecePosition)) {
+			return false;
+		}
+		PiecePosition piecePosition = (PiecePosition) obj;
+		return Objects.equals(row, piecePosition.row) && Objects.equals(column, piecePosition.column);
+	}
+
 	@Override
 	public String toString() {
 		StringBuilder stringBuilder = new StringBuilder();
